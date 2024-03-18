@@ -17,11 +17,10 @@ const Navigation = () => {
                     <div className="drawer-side">
                         <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
                         <ul className="menu p-4 w-70 min-h-full bg-base-200 text-base-content">
-                            <li className='font-bold mt-3'><a><FaHome/> Home</a></li>
-                            <li className='font-bold mt-3'><a><MdDashboard/> Dashboard</a></li>
-                            <li className='font-bold mt-3'><a><CgProfile/> Profile</a></li>
-                            <li className='font-bold mt-3'><a><CiLogout/> Logout</a></li>
-
+                            <li className='font-bold mt-3'><a><FaHome className='mr-2'/> Home</a></li>
+                            <li className='font-bold mt-3'><a><MdDashboard className='mr-2'/> Dashboard</a></li>
+                            <li className='font-bold mt-3'><a><CgProfile className='mr-2'/> Profile</a></li>
+                            <li className='font-bold mt-3'><a><CiLogout className='mr-2'/> Logout</a></li>
                         </ul>
                     </div>
                 </div>
