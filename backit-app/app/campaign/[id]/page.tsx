@@ -1,5 +1,6 @@
 'use client'
 
+import Footer from "@/app/components/Footer";
 import CampaignDetails from "../../components/CampaignDetails"
 import Navigation from "../../components/Navigation";
 import { useParams } from "next/navigation";
@@ -10,6 +11,7 @@ const CampDetails = () => {
     <div>
       <Navigation title={'Campaign: Revolutionary Solar - Powered Backpack'}/>
       <CampaignDetails/>
+      <Footer/>
     </div>
   )
 }

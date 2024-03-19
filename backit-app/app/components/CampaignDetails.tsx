@@ -12,9 +12,9 @@ const CampaignDetails = () => {
             <div className='w-2/3 p-4'>
                 <h1 className='font-bold text-sm rounded ml-1'>Description</h1>
                 <p className='text-xs mt-2 bg-gray-100 p-4 rounded-lg'>Detailed explanation of the innovative solar panel technology and how it benefits users.Detailed explanation of the innovative solar panel technology and how it benefits users.Detailed explanation of the innovative solar panel technology and how it benefits users.Detailed explanation of the innovative solar panel technology and how it benefits users.Detailed explanation of the innovative solar panel technology and how it benefits users.Detailed explanation of the innovative solar panel technology and how it benefits users.Detailed explanation of the innovative solar panel technology and how it benefits users.Detailed explanation of the innovative solar panel technology and how it benefits users.Detailed explanation of the innovative solar panel technology and how it benefits users.Detailed explanation of the innovative solar panel technology and how it benefits users.Detailed explanation of the innovative solar panel technology and how it benefits users.Detailed explanation of the innovative solar panel technology and how it benefits users.Detailed explanation of the innovative solar panel technology and how it benefits users.</p>
-                <h1 className='font-bold text-sm rounded mt-10 ml-1'>Category</h1>
+                <h1 className='font-bold text-sm rounded mt-5 ml-1'>Category</h1>
                 <p className='text-sm mt-2 bg-gray-100 text-success p-4 rounded-lg font-bold'>Technology</p>
-                <h1 className='font-bold text-sm rounded-lg mt-10 ml-1'>Media </h1>
+                <h1 className='font-bold text-sm rounded-lg mt-5 ml-1'>Media </h1>
                 <div className='flex flex-row p-2 rounded-lg h-1/4'>
                     <div className="flex flex-col w-2/3">
                         <div className="carousel w-full mt-2">
@@ -55,7 +55,7 @@ const CampaignDetails = () => {
                     <button className="btn m-auto ml-auto">Watch Video? <FaVideo /></button>
 
                 </div>
-                <h1 className='font-bold text-sm rounded mt-10 ml-1'>Campaign Timeline</h1>
+                <h1 className='font-bold text-sm rounded mt-5 ml-1'>Campaign Timeline</h1>
                 <div className="grid grid-cols-3 gap-4">
                     <p className='text-xs mt-2 bg-gray-200 p-4 rounded-lg font-bold text-center'>May: Finallize Design</p>
                     <p className='text-xs mt-2 bg-gray-200 p-4 rounded-lg font-bold text-center'>June: Prototype Testing</p>
@@ -85,8 +85,8 @@ const CampaignDetails = () => {
                     </div>
                     <div className="bg-white p-2 rounded-lg flex flex-col">
                         <h1 className="text-bold bg-neutral text-white p-1 rounded-lg text-xs text-center">Social</h1>
-                        <button className="btn btn-xs btn-primary text-white font-bold m-auto">Linkedin <FaLinkedin/></button>
-                        <button className="btn btn-xs btn-info text-white font-bold m-auto">Twitter <FaTwitter/></button>
+                        <button className="btn btn-xs btn-primary text-white font-bold m-auto">Linkedin <FaLinkedin /></button>
+                        <button className="btn btn-xs btn-info text-white font-bold m-auto">Twitter <FaTwitter /></button>
                     </div>
                 </div>
             </div>
@@ -94,6 +94,7 @@ const CampaignDetails = () => {
                 <div className="bg-neutral rounded-lg flex flex-col p-4">
                     <h1 className="font-bold text-accent mt-1 text-center">Funds</h1>
                     <button className="btn btn-xs text-white font-bold btn-info mx-auto mt-2">Goal: $25,000</button>
+                    <progress className="progress progress-success w-56 mt-2 mx-auto bg-white" value="70" max="100"></progress>
                     <button className="btn btn-xs mx-auto mt-2">Duration: 01/03/2024 - 01/04/2024</button>
                     <h1 className="text-xs mt-2 text-warning font-bold ">Funding Tiers & Rewards:</h1>
                     <p className="text-white mt-2 text-xs">Tier 1: $25 - Personalized Thank You Email</p>
@@ -103,7 +104,7 @@ const CampaignDetails = () => {
                 </div>
                 <div className="bg-neutral rounded-lg flex flex-col p-4 mt-2">
                     <h1 className="font-bold text-accent mt-1 text-center">Terms & Conditions</h1>
-                    <p className="text-white mt-2 text-xs">Eligibility: You must be at least 18 years old to use our app. By using our services, you confirm that you are of legal age.</p>
+                    <p className="text-white mt-2 text-xs">Eligibility: You must be at least 18 years old to Contribute. By using our services, you confirm that you are of legal age.</p>
                     <p className="text-white mt-2 text-xs">Contributions: Contributions made to campaigns are non-refundable. Once a contribution is made, it cannot be reversed or refunded.</p>
                     <p className="text-white mt-2 text-xs">Campaign Cancellations: Campaign creators may cancel their campaigns at any time before the funding deadline. In such cases, contributions will be returned to contributors.</p>
                 </div>

@@ -9,7 +9,7 @@ const Campaigns = () => {
         router.push(`/campaign/${id}`);
     }
     return (
-        <div className="grid grid-cols-3 gap-2 p-2">
+        <div className="grid grid-cols-3 gap-2 p-2 mb-20">
             <div className="p-5 rounded-lg flex flex-col bg-neutral cursor-pointer">
                 <div className='flex flex-row'>
                     <h1 className='font-bold text-accent w-2/3'>Revolutionary Solar-Powered Backpack</h1>
