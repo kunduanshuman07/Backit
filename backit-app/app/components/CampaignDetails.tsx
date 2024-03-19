@@ -6,6 +6,7 @@ import AnshumanKundu from "../assets/Anshuman Kundu.jpg"
 import { FaVideo } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import { checkout } from "@/checkout";
 const CampaignDetails = () => {
     return (
         <div className='p-2 mt-2 flex flex-row w-full'>
@@ -100,7 +101,16 @@ const CampaignDetails = () => {
                     <p className="text-white mt-2 text-xs">Tier 1: $25 - Personalized Thank You Email</p>
                     <p className="text-white mt-2 text-xs">Tier 2: $50 - Early Access to Purchase + Tier 1 Reward</p>
                     <p className="text-white mt-2 text-xs">Tier 3: $100 - Limited Edition Solar-Powered Keychain + Tiers 1-2 Rewards</p>
-                    <button className="btn btn-error btn-xs text-white font-bold ml-auto mt-2 mr-2 mb-2">Contribute</button>
+                    <button className="btn btn-error btn-xs text-white font-bold ml-auto mt-2 mr-2 mb-2"
+                        onClick={(() => {
+                            checkout(
+                                {
+                                    lineItems: [{ price: "price_1Ow3szSG8PjB3QXH14UIM0u8", quantity: 1}]
+                                }
+                            )
+                        })}
+
+                    >Contribute</button>
                 </div>
                 <div className="bg-neutral rounded-lg flex flex-col p-4 mt-2">
                     <h1 className="font-bold text-accent mt-1 text-center">Terms & Conditions</h1>
