@@ -1,11 +1,34 @@
-import React from 'react'
+'use client'
+import React, { use } from 'react'
 import { FaHome } from "react-icons/fa";
 import { MdDashboard } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { CiLogout } from "react-icons/ci";
-const Navigation = () => {
+import {useRouter} from "next/navigation"
+
+interface NavigationProps{
+    title: any;
+}
+
+const Navigation:React.FC<NavigationProps> = ({title}) => {
+    const router = useRouter();
+    const handleHomePage = () => {
+        router.push('/');
+    }
+    const handleDashboardPage = () => {
+        router.push('/dashboard');
+        
+    }
+    const handleProfilePage = () => {
+        router.push('/profile');
+        
+    }
+    const handleLogoutPage = () => {
+        router.push('/login');
+        
+    }
     return (
-        <div className="navbar">
+        <div className="navbar h-0">
             <div className="navbar-start">
                 <div className="drawer z-10">
                     <input id="my-drawer" type="checkbox" className="drawer-toggle" />
@@ -17,16 +40,16 @@ const Navigation = () => {
                     <div className="drawer-side">
                         <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
                         <ul className="menu p-4 w-70 min-h-full bg-base-200 text-base-content">
-                            <li className='font-bold mt-3'><a><FaHome className='mr-2'/> Home</a></li>
-                            <li className='font-bold mt-3'><a><MdDashboard className='mr-2'/> Dashboard</a></li>
-                            <li className='font-bold mt-3'><a><CgProfile className='mr-2'/> Profile</a></li>
-                            <li className='font-bold mt-3'><a><CiLogout className='mr-2'/> Logout</a></li>
+                            <li className='font-bold mt-3' onClick={handleHomePage}><a><FaHome className='mr-2'/> Home</a></li>
+                            <li className='font-bold mt-3' onClick={handleDashboardPage}><a><MdDashboard className='mr-2'/> Dashboard</a></li>
+                            <li className='font-bold mt-3' onClick={handleProfilePage}><a><CgProfile className='mr-2'/> Profile</a></li>
+                            <li className='font-bold mt-3' onClick={handleLogoutPage}><a><CiLogout className='mr-2'/> Logout</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div className="navbar-center">
-                <a className="font-bold text-xl">BackIt</a>
+                <button className="btn btn-sm btn-accent text-white font-bold">{title}</button>
             </div>
             <div className="navbar-end">
                 <div className="flex-none">

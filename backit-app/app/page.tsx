@@ -6,7 +6,7 @@ import CampaignHeader from './components/CampaignHeader'
 const page = () => {
   return (
     <div>
-      <Navigation />
+      <Navigation title={"Campaigns"}/>
       <CampaignHeader />
       <Campaigns />
     </div>
